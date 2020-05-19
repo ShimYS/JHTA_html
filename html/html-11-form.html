@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>폼과 폼입력요소</h1>
+    
+    <h3>input 태그의 다양한 형태</h3>
+    
+    <form method="post" action="register.jsp">
+        <label>입력필드</label><input type="text"  value="name" name="username"/><br/>
+        <label>입력필드</label><input type="text"  value="name" name="username" readonly/><br/>
+        <label>입력필드</label><input type="text"  value="name" name="username" disabled/><br/>
+        
+        <label>비밀번호필드</label><input type="password"     name="userpwd" placeholder="비밀번호 입력"/><br/>
+        <label>날짜</label><input type="date"                name="biㄴrth"/><br/>
+        
+        <label>체크박스</label><input type="checkbox"         name="skill" value="java" checked/>자바<br/>
+        <label>체크박스</label><input type="checkbox"         name="skill" value="python"/>파이썬<br/>
+        <label>체크박스</label><input type="checkbox"         name="skill" value="javascript"/>자바스크립트<br/>
+        
+        <label>라이도버튼</label><input type="radio"          name="gender" value="female" checked/>여성<br/>
+        <label>라이도버튼</label><input type="radio"          name="gender" value="male"/>남성<br/>
+        
+        <label>드롭다운필드</label><select name="city">
+            <option value="" selected disabled>-- 선택하세요 -- </option>
+            <option value="1">서울</option>
+            <option value="2">수도권</option>
+            <option value="3">경기도</option>
+            <option value="4">전국</option>
+            <option value="5">제주도</option>
+            <option value="6">산간벽지, 섬</option>
+        </select><br />
+        <label>텍스트필드</label><textarea name="memo1"cols="30" rows="3"></textarea><br/>
+        <label>텍스트필드</label><textarea name="memo2"cols="60" rows="7">나는나다.</textarea><br/>
+        
+        <label>첨부파일입력</label><input type="file"          name="profilefile"/><br/>
+        <label>숨긴입력필드</label><input type="hidden"        name="code" value="c001"/><br/>
+        <label>초기화버튼</label><input type="reset" value="취소"/><br/>
+        <label>입력값 제출 버튼</label><input type="submit" value="등록"/><br/>
+        
+        <!-- 폼입력값을 서버로 제출한다 -->
+        <label>버튼</label><button>버튼</button><br/>
+        <!-- 클릭가능한 그냥 버튼이 된다 -->
+        <label>버튼</label><button type="button">버튼</button><br/>
+        <!-- 폼입력값을 초기화시킨다 -->
+        <label>버튼</label><button type="reset">리셋버튼</button><br/>
+        <!-- 폼입력값을 서버로 제출한다 -->
+        <label>버튼</label><button type="submit">제출버튼</button><br/>
+    </form>
+</body>
+</html>

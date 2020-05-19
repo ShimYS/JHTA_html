@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .container div{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+        #box-1 div{
+            position: static;
+        }
+        #box-2 div{
+            position: relative;
+        }
+        
+        #box-3 {
+            position: relative;
+            left: 150px;
+        }
+        #box-3 div{
+            position: absolute;
+        }
+        #box-3 div:first-child{
+            top: 0px;
+            left: 0px;
+        }
+        #box-3 div:nth-child(2){
+            right: 30px;
+        }
+        #box-3 div:nth-child(3){
+            right: 30px;
+            bottom: 30px;
+        }
+        #box-3 div:nth-child(4){
+            bottom: 30px;
+        }
+        #box-4 {
+            position: fixed;
+            width: 300px;
+            height: 500px;
+            top: 200px;
+            right: 0;
+            background-color: yellow;
+        }
+        #box-4 div{
+            position: fixed;
+        }
+        
+        #box-2 div:nth-child(2){
+            left:60px; 
+        }
+        
+        #box-2 div:nth-child(3){
+            right:-120px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>엘리먼트 위치를 지저하기</h1>
+    
+    <h3>position 속성이 static일때</h3>
+    <div id="box-1" class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <h3>position 속성이 relative일때</h3>
+    <div id="box-2" class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <h3>position 속성이 absolute일때</h3>
+    <div id="box-3" class="container">
+        <div></div>
+        <div></div>
+        <div></div><div></div>
+    </div>
+    
+    <div id="box-4" class="container">
+        <h3>position 속성이 fixed일때</h3>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

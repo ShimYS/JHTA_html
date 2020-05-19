@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div, span {
+            margin: 10px 6px;
+            border: 1px solid red;
+        }
+        table {
+            width: 100%;
+        }
+        
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        
+        th{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!--HEADER-->
+        <div>
+            <h1>수강신청 현황 조회</h1>
+        </div>
+        <!--BODY-->
+        <div>
+            <div>
+                <form>
+                    <label>학기</label>
+                    <select name="year">
+                        <option value="2020"> 2020 </option>
+                        <option value="2019"> 2019 </option>
+                        <option value="2018"> 2018 </option>
+                        <option value="2017"> 2017 </option>
+                        <option value="2016"> 2016 </option>
+                    </select>
+                    <select name="period">
+                        <option value="1"> 1학기 </option>
+                        <option value="2"> 2학기 </option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <form>
+                    <div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" name="courseAllChecked" value="Y"></th>
+                                    <th>과정번호</th>
+                                    <th>과정명</th>
+                                    <th>담당교수</th>
+                                    <th>취소여부</th>
+                                    <th>수료여부</th>
+                                    <th>성적</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="courseChecked" value="10000"></td>
+                                    <td>10000</td>
+                                    <td>데이터베이스기초</td>
+                                    <td>이교수</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>-</td>
+                                    <td>
+                                        <button type="button">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="courseChecked" value="10011"></td>
+                                    <td>10011</td>
+                                    <td>전작계산기 일반</td>
+                                    <td>심교수</td>
+                                    <td>N</td>
+                                    <td>N</td>
+                                    <td>-</td>
+                                    <td>
+                                        <button type="button">삭제</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="courseChecked" value="10071" disabled></td>
+                                    <td>10071</td>
+                                    <td>이산수학</td>
+                                    <td>김교수</td>
+                                    <td>Y</td>
+                                    <td>N</td>
+                                    <td>-</td>
+                                    <td>
+                                        <button type="button" disabled>삭제</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <button type="submit">전체취소</button>
+                        <button type="submit">선택취소</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div>
+            <p>중앙HTA학교</p>           
+            <p>주소 : 서울특별시 종로구 율곡로 10길 105 디아망빌딩 4층</p> 
+            <p>전화 : 070-1234-6789</p>    
+        </div>
+    </div>
+</body>
+</html>

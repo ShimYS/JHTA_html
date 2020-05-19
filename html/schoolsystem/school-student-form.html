@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>student-form</title>
+    <style>
+        div, span {
+            margin: 7px 0;
+        }
+        table {
+            width: 100%;
+            text-align: center;
+        }
+        
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        
+        th{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 600px; margin: 10px auto;">
+        <div style="text-align: center; border: 1px solid gray;">
+            <!--header-->
+            <div>
+                <h1>학생 정보 입력폼</h1>
+            </div>
+        </div>
+        
+        <div style="background-color: #eeeeee; border: 1px solid gray; padding: 16px;">
+            <!--body-->
+            <form>
+            <div>
+                <!--이름입력-->
+                <div><label>학생명</label><br/></div>
+                <div><input type="text" name="username" style="width: 100%; height: 30px;"></div>
+            </div>
+            <div>
+                <!--학과-->
+                <div>
+                    <div><label>학과명</label></div>
+                </div>
+                <div>
+                    <select name="dept" style="width: 100%; height: 30px">
+                        <option value="" selected disabled>-- 선택하세요 --</option>
+                        <option value="electronic">전자공학과</option>
+                        <option value="infocom">정보통신공학과</option>
+                        <option value="machine">기계공학과</option>
+                        <option value="computer">컴퓨터공학과</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <!--학년-->
+                <div><label>학년</label></div>
+                <div>
+                    <label><input type="radio" name="rank" value="1" checked></label>1학년
+                    <label><input type="radio" name="rank" value="1"></label>2학년
+                    <label><input type="radio" name="rank" value="1"></label>3학년
+                    <label><input type="radio" name="rank" value="1"></label>4학년
+                </div>
+            </div>
+            <div>
+                <div style="text-align: right;">
+                    <label><button type="reset" style="padding: 3px 15px;">취소</button></label>
+                    <label><button type="submit" style="padding: 3px 15px">등록</button></label>
+                </div>
+            </div>
+            </form>
+        </div>
+        
+        <div style="text-align: center; border: 1px solid gray;">
+            <!--footer-->
+            <div>
+                <p>중앙HTA학교 주소 : 서울특별시 종로구 율곡로 10길 105 디아망빌딩 4층</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .container{
+            margin: 10px;
+            padding-top: 10px;
+            width: 500px;
+            height: 1000px;
+            background-color: black;
+        }
+        .top, .bottom{
+            top:10px;
+            width: 440px;
+            height: 440px;
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-img{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 440px;
+            margin-bottom: 50px;
+        }     
+        .top img{
+            padding-top: 10px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="top__column">
+                <div class="top-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSberXuNWNPQUNwaQbUdZ-5L2xKiXMpJo5DSmdtyaS9AsELW87MY2WrbVFrU7ZDfTP3YrgmlqeE&usqp=CAc" alt="Apple Watch">
+                </div>
+                <script src="https://kit.fontawesome.com/1a122948e3.js" crossorigin="anonymous"></script>
+            </div>
+            <div class="top__column top-text">
+                <span>Apple Watch</span>
+                <span>Apple Watch is the ultimate device for a healthy life. Choose from all the latest models like Apple Watch...</span>
+            </div>
+            <div class="top__column top-info">
+                <span>$600</span>
+                <div>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="fas fa-star"></i></span>
+                    <span><i class="far fa-star"></i></span>
+                </div>
+                <span>16</span>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom__column bottom-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSUlRFDC5eapxhQn0ygFCfRHrhPrSebqAkrWsNI8eecMOvBJA8o&usqp=CAU" alt="flower image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlzmoAPesW_irL0y7PMSHrBBifBVezzqy-PRAyexiLQn_NrxLz&usqp=CAU" alt="profile image">
+            </div>
+            <div class="bottom__column bottom-text">
+                <span>Clarke Gillebert</span>
+                <span>Engineer</span>
+            </div>
+            <div class="bottom__column bottom-button">
+                <button>Follow</button>
+                <button>Message</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

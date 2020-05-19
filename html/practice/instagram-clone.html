@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://kit.fontawesome.com/1a122948e3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: white;
+            padding: 20px;
+            
+            width: 700px;
+            height: 1500px;
+            
+        }
+        .box-border{
+            position: fixed;
+            top: 0px;
+            width: 700px;
+            height: 100%;
+            border: 5px solid black;
+            border-radius: 50px;
+        }
+        .status__bar {
+            margin: 10px 10px 10px 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .status__bar-img{
+            width: 150px;
+        }
+        .fa-tv{
+            margin: 10px;
+        }
+        .fa-paper-plane{
+            margin: 10px;
+        }
+        .header{
+            margin: 10px 0;
+        }
+        .header__pricture img {
+            width: 120px;
+            box-shadow: 0px 0px;
+        }
+        .header__pricture {
+            display: flex;
+        }
+        .header__pricture div img{
+            border-radius: 50px;
+            margin: 30px;
+        }
+        .header__picture-newfriends{
+            position: relative;
+        }
+        .fa-plus-circle {
+            position: absolute;
+            left: 130px;
+            top:120px;
+        }
+        .main{
+            height: 800px;
+            width: 685px;
+            padding: 10px;
+            background-color: aliceblue;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
+        }
+        .main .main__header{
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .main .main__header .main__header-column{
+            display: flex;
+        }
+        .main .main__header .main__header-column img{
+            width: 90px;
+            margin: 0px 10px;
+            border-radius: 50%;
+        }
+        .header-column-left-name{
+            margin-top: 20px;
+        }
+        .main__header-column fa-ellipsis-h{
+            
+        }
+        .main__bady {
+            text-align: center;
+        }
+        .main__bady img{
+            width: 600px;
+            height: 600px;
+            border-radius: 20px;
+        }
+        .main__footer{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 20px;
+            margin-bottom: 15px;
+        }
+        .main__footer-column{
+            display: flex;
+        }
+        .footer-column-left{
+            margin: 0px 40px;
+        }
+        .footer-column-left span {
+            margin: 5px;
+        }
+        .footer{
+            position: fixed;
+            bottom: 15px;
+            left: 33px;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            border-radius: 50px;
+            background-color: white;
+            width: 700px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box-border"></div>
+        <div class="status__bar">
+            <div class="status__bar-column">
+                <img 
+                class="status__bar-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS38MXXsqCAG9VxLOFmZVvD-At4nswwcIZHMjjwo1iOFxqWiYM9&usqp=CAU" alt="">
+            </div>
+            <div class="status__bar-column">
+                <i class="fas fa-tv fa-2x"></i>
+                <i class="far fa-paper-plane fa-2x"></i>            
+            </div>
+        </div>
+        <header class="header">
+            <div class="header__pricture">
+                <div class="header__picture-newfriends">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+                    <i class="fas fa-plus-circle fa-2x"></i>
+                </div>
+                <div class="header__picture-friends">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+                </div>
+                <div class="header__picture-friends">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+                </div>
+                <div class="header__picture-friends">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+                </div>
+                <div class="header__picture-friends">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__header">
+                <div class="main__header-column">
+                    <div class="header-column-left">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+                    </div>
+                    <div class="header-column-left">
+                        <div class="header-column-left-name">
+                            <div>Sam Martin</div>
+                            <div>5min</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__header-column">
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </div>
+            </div>
+            <div class="main__bady">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+            </div>
+            <div class="main__footer">
+                <div class="main__footer-column">
+                    <div class="footer-column-left">
+                        <i class="far fa-heart"></i>
+                        <span>2,515</span>
+                    </div>
+                    <div class="footer-column-left">
+                        <i class="far fa-comment-alt"></i>
+                        <span>380</span>
+                    </div>
+                </div>
+                <div class="main__footer-column">
+                    <i class="far fa-bookmark"></i>
+                </div>
+            </div>
+            <div class="main__header">
+                <div class="main__header-column">
+                    <div class="header-column-left">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+                    </div>
+                    <div class="header-column-left">
+                        <div class="header-column-left-name">
+                            <div>Sam Martin</div>
+                            <div>5min</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__header-column">
+                    <i class="fas fa-ellipsis-h fa-2x"></i>
+                </div>
+            </div>
+            <div class="main__bady">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTXt-SlNuxykj2WJ7aii3UmoMgal-gtYWATT0WENMJo8mjgYG2j&usqp=CAU" alt="">
+            </div>
+            <div class="main__footer">
+                <div class="main__footer-column">
+                    <div class="footer-column-left">
+                        <i class="far fa-heart"></i>
+                        <span>2,515</span>
+                    </div>
+                    <div class="footer-column-left">
+                        <i class="far fa-comment-alt"></i>
+                        <span>380</span>
+                    </div>
+                </div>
+                <div class="main__footer-column">
+                    <i class="far fa-bookmark"></i>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-column">
+                <i class="fas fa-th-large fa-2x"></i>
+            </div>
+            <div class="footer-column">
+                <i class="fas fa-search fa-2x"></i>
+            </div>
+            <div class="footer-column">
+                <div class="footer-center-box">
+                    <i class="fas fa-plus fa-2x"></i>
+                </div>
+            </div>
+            <div class="footer-column">
+                <i class="far fa-heart fa-2x"></i>
+            </div>
+            <div class="footer-column">
+                <i class="far fa-user fa-2x"></i>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation01</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        .box1{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            width: 60px;
+            display: flex;
+            animation: 2s rotateBox infinite ease-in-out;
+        }
+        .box1 span{
+            display: block;
+            margin: 5px;
+            width: 50px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        @keyframes rotateBox {
+            0%{
+                transform: none;
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        
+        .box2{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            width: 100px;
+            display: flex;
+            
+        }
+        .box2-1{
+            animation: 1.5s transfomBox infinite ease-in-out
+        }
+        .box2-2{
+            animation: 1.5s transfomBox 0.1s infinite ease-in-out
+        }
+        .box2-3{
+            animation: 1.5s transfomBox 0.2s infinite ease-in-out
+        }
+        .box2-4{
+            animation: 1.5s transfomBox 0.3s infinite ease-in-out
+        }
+        .box2-5{
+            animation: 1.5s transfomBox 0.4s infinite ease-in-out
+        }
+        
+        .box2 span{
+            margin: 2px;
+            width: 20px;
+            height: 50px;
+            background-color: white;
+        }
+        @keyframes transfomBox {
+            0%{
+                none;
+            }
+            15%{
+                transform: scaleY(3); 
+            }
+            50%{
+                transform: scaleY(1); 
+            }
+            100%{
+                none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <span class="box1">
+        <span></span>
+        <span></span>
+        <span></span>
+    </span>
+    <div class="box2">
+        <span class="box2-1"></span>
+        <span class="box2-2"></span>
+        <span class="box2-3"></span>
+        <span class="box2-4"></span>
+        <span class="box2-5"></span>
+    </div>
+</body>
+</html>
